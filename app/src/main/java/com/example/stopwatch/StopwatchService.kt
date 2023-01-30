@@ -17,6 +17,7 @@ class StopwatchService : Service() {
     }
 
     override fun onDestroy() {
+        timer.cancel()
         super.onDestroy()
     }
 
